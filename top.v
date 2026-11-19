@@ -4,7 +4,21 @@ module top(
     input btnC, // clk
     input btnU // reset
 );
+    
+    onehot oh(
+        .w(sw),
+        .clk(btnC),
+        .reset(btnU),
+        .z(led[0]),
+        .state(led[6:2])
+    );
 
-    // Hook up binary and one-hot state machines
+    binary bn(
+        .w(sw),
+        .clk(btnC),
+        .reset(btnU),
+        .z(led[1]),
+        .state(led[9:7])
+    );
 
 endmodule
