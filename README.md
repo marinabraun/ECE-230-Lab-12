@@ -14,6 +14,7 @@ In this lab, you’ve learned about One Hot and Binary state machines and how to
 ## Names
 Group 9: Marina and Evan
 ## Summary
+In this lab we explored both One Hot and Binary encoding both on paper with K-maps and implemented in verilog.
 
 ## Lab Questions
 
